@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://kse8gu5386cn"]
+
+[ext_resource type="Script" uid="uid://bi4mjw1c0oqu6" path="res://barrel.gd" id="1_n8un1"]
+
+[node name="Node3D" type="Node3D" unique_id=1016807599]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=637034011]
+script = ExtResource("1_n8un1")

@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://c3025gobc65ow"]
+
+[ext_resource type="Script" uid="uid://bryry31a321y7" path="res://player.gd" id="1_uu6xs"]
+[ext_resource type="Script" uid="uid://cfi7md47q28lm" path="res://water.gd" id="2_r0du0"]
+[ext_resource type="Script" uid="uid://ba3lfw270mvqn" path="res://marker.gd" id="3_r0du0"]
+[ext_resource type="Script" uid="uid://cu6uh5c7c6r6c" path="res://dayandnight.gd" id="4_cm0pq"]
+[ext_resource type="Script" uid="uid://geucvj8cxyys" path="res://terrain.gd" id="5_fos0i"]
+[ext_resource type="Script" uid="uid://b4johqlpid5vi" path="res://island_props.gd" id="7_lgr22"]
+[ext_resource type="Script" uid="uid://b7mpug8dnvbvm" path="res://sea_spawner.gd" id="8_trn2v"]
+[ext_resource type="Script" uid="uid://de45ykp3gw5tk" path="res://pathtracer/pathtracer_overlay.gd" id="9_03owx"]
+
+[node name="Main" type="Node3D" unique_id=471360072]
+
+[node name="player" type="Node3D" parent="." unique_id=373115444]
+script = ExtResource("1_uu6xs")
+
+[node name="water" type="Node3D" parent="." unique_id=613819123]
+script = ExtResource("2_r0du0")
+water_size = Vector3(400, 2, 400)
+max_buoyancy_force = 100.0
+
+[node name="marker" type="Node3D" parent="." unique_id=1315643132]
+script = ExtResource("3_r0du0")
+
+[node name="DayNight" type="Node3D" parent="." unique_id=434379634]
+script = ExtResource("4_cm0pq")
+sun_max_energy = 1.1
+moon_max_energy = 1.1
+ambient_night_energy = 0.7
+
+[node name="Terrain" type="Node3D" parent="." unique_id=831415717]
+script = ExtResource("5_fos0i")
+world_size = 400.0
+resolution = 32
+border_width = 25.0
+border_height = 25.0
+island_scale = 30.0
+island_height = 10.0
+noise_seed = 1989
+
+[node name="Props" type="Node3D" parent="." unique_id=577979572]
+script = ExtResource("7_lgr22")
+
+[node name="SeaSpawner" type="Node3D" parent="." unique_id=584398182]
+script = ExtResource("8_trn2v")
+
+[node name="p_overlay" type="Node3D" parent="." unique_id=1811073396]
+script = ExtResource("9_03owx")

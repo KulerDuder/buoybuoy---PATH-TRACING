@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://bnpmdjvu0ntb1"
+path="res://.godot/imported/pathtracer.glsl-7574353c2f42e72cdd8c1de3e2e23280.res"
+
+[deps]
+
+source_file="res://pathtracer/pathtracer.glsl"
+dest_files=["res://.godot/imported/pathtracer.glsl-7574353c2f42e72cdd8c1de3e2e23280.res"]
+
+[params]
+
